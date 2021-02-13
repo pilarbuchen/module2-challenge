@@ -1,0 +1,219 @@
+/* HEADER + MENU */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+h1 {
+    background-color:turquoise; 
+    padding: 10px;
+    font-size: 50px; 
+}
+
+.logo, .nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.nav { 
+    text-align: right;   
+}
+  
+li {
+    display: inline; 
+}
+
+li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black; 
+}
+
+li a:hover {
+    background-color:goldenrod;
+    color: white;
+  }
+
+/*IMAGE SECTION*/
+  .image {
+    height: 350px;
+    width: 100%;
+    background-image: url("../images/image.JPG");
+    background-size: cover;
+  }
+
+.imagesection {
+    position: relative;
+    text-align: center;
+}
+
+.bottom-right {
+    position: absolute; 
+    bottom: 20px;
+    font-family: 'Segoe UI';
+    font-size: 22px;
+    background-color: goldenrod;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.magenta {
+    width:fit-content
+}
+
+/*HOVER EFFECTS FOR SECTIONS*/
+#imghover {
+    opacity: 0.2; 
+    filter:alpha(opacity=40); 
+}
+
+#imghover:hover {
+    opacity:1.0;
+    filter:alpha(opacity=100); 
+}
+
+
+/*SECTIONS FLEX*/
+.sections {
+    background-color: turquoise;
+}
+
+#flex-container {
+    width: 89%;
+    margin: auto; 
+    padding-top: 10px; 
+  }
+
+span {
+    background-color: goldenrod;
+    margin-top: 10px; 
+    font-family: 'Segoe UI';
+    font-size: 22px;
+    position: absolute;
+    width: 180px; 
+}
+
+/*ABOUT ME SECTION*/
+.section-aboutme {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-left: 30px; 
+}
+
+#aboutme-content p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    padding-left: 25px; 
+    padding-right: 10px; 
+    padding-top: 10px; 
+
+}
+
+/*MY WORK SECTION*/
+.section-mywork {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold; 
+    font-size: 50px;
+    margin-left: 30px; 
+}
+
+
+#flex-container > div {
+    flex: 1;
+}
+
+.flex-container-items {
+    flex:0 0 48%;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.flex-container-items > .flex-items {
+    flex: inherit;
+}
+
+.flex-items {
+    padding: 5px; 
+    margin: 5px;
+}
+
+/*CONTACT ME SECTION*/
+.section-contactme {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px; 
+    margin-left: 30px; 
+    padding-top: 30px; 
+}
+
+.list {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 50px; 
+}
+
+li {
+    margin-top:10px;
+    margin: 40px; 
+}
+
+@media screen and (max-width: 980px) {
+    .logo, .nav, h2{
+      text-align: center;  
+    }
+
+    h1, #section-aboutme, #section-mywork, #section-contactme{
+        font-size: 40px; 
+    }
+
+    li {
+        font-size: 18px; 
+    }
+
+    span {
+        width: auto; 
+        font-size: 18px;
+    }
+
+    #aboutme-content p {
+        font-size: 18px; 
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h1, #section-aboutme, #section-mywork, #section-contactme{
+        font-size: 20px; 
+    }
+
+    li {
+        font-size: 11px; 
+        margin: auto; 
+    }
+  
+    #aboutme-content p {
+        font-size: 11px; 
+    }
+    
+    .bottom-right {
+        font-size: 11px; 
+    }
+
+    span {
+        width: auto; 
+        font-size: 10px;
+    }
+  }
