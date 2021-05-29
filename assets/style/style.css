@@ -70,7 +70,8 @@ img {
 }
 
 .magenta {
-    width:fit-content
+    width:fit-content;
+    width: 100%;
 }
 
 /*HOVER EFFECTS FOR SECTIONS*/
@@ -148,6 +149,7 @@ span {
 .flex-items {
     padding: 5px; 
     margin: 5px;
+   
 }
 
 /*CONTACT ME SECTION*/
